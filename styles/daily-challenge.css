@@ -1,0 +1,25 @@
+body {
+  margin: 50px;
+  }
+
+h1 {
+    color: cadetblue;
+  }
+
+  p {
+    color: #534b4b;
+  }
+
+    /* text-align: center; => 이미지는 속성값이 없기 때문에 body에서 가운데 정렬을 해줘야 함*/
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+
+  /* 특정 항목을 선택하기 위한 선택자 */
+  #todays-challenge {
+    color: rgb(170, 96, 83);
+    font-weight: bold;
+    font-size: 52px;
+  }

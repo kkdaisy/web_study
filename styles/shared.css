@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: #e9d7cf;
+    color: rgb(83, 75, 75);
+    }
+  
+  h1 {
+      font-family: sans-serif;
+    }
+  
+    p {
+      font-family: sans-serif;
+    }
+  
+    a {
+      font-family: sans-serif;
+      color: rgb(167, 1, 78);
+      text-decoration: none;
+    }
+    /*마우스를 갖다댈 때 underline이 생김 */
+    /*hover : 마우스를 갖다댈 때 생기는  */
+    a:hover {
+      text-decoration: underline;
+    }
+
+  
