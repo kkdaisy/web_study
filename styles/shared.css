@@ -10,6 +10,7 @@ body {
   
     p {
       font-family: sans-serif;
+      margin-bottom: 36px;
     }
     
     /*앵커태그는 브라우저에서 기본 상속이 있어서(파란색) 해당 속성이 있더라도 다른 기본 속성을 상속받지 않음 */
