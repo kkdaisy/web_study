@@ -1,25 +1,43 @@
-body {
-  margin: 50px;
-  }
+main {
+  width: 800px;
+  margin: 200px auto 72px auto;
+  background-color: rgb(219, 108, 94);
+  padding: 24px;
+  border: 5px solid rgb(44, 44, 44);
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+}
 
 h1 {
-    color: cadetblue;
-  }
+  font-size: 30px;
+  color: rgb(31, 25, 25);
+}
 
-  p {
-    color: #534b4b;
-  }
+a{
+  color:rgb(73, 29, 50)
+}
 
-    /* text-align: center; => 이미지는 속성값이 없기 때문에 body에서 가운데 정렬을 해줘야 함*/
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-  }
 
-  /* 특정 항목을 선택하기 위한 선택자 */
-  #todays-challenge {
-    color: rgb(170, 96, 83);
-    font-weight: bold;
-    font-size: 52px;
-  }
+span{
+  color: rgb(66, 2, 2)
+}
+
+p {
+  color: #534b4b;
+}
+
+  /* text-align: center; => 이미지는 속성값이 없기 때문에 body에서 가운데 정렬을 해줘야 함*/
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: -134px;
+  border-radius: 100px;
+  border: 5px solid rgb(44, 44, 44)
+}
+
+/* 특정 항목을 선택하기 위한 선택자 */
+#todays-challenge {
+  color: rgb(75, 59, 59);
+  font-weight: bold;
+  font-size: 52px;
+}
