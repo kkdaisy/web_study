@@ -1,24 +1,16 @@
 body {
-  text-align: center;
   background-color: rgb(244, 234, 255);
   font-family: 'Roboto', sans-serif;
 }
 
-main {
-  width: 800px;
-  margin: 50px auto 30px auto;
-  background-color: rgb(102, 3, 194);
-  border-radius: 10px;
-}
-
 header {
   text-align: center;
+  padding: 32px;
 }
 
 h1 {
   color: rgb(88, 49, 196);
   font-size: 60px;
-  font-weight: bold;
 }
 
 header img {
@@ -27,36 +19,70 @@ header img {
 }
 
 h2 {
-  color: rgb(255, 255, 255) ;
   font-size: 30px;
   text-align: left;
   padding-left: 2%;
 }
 
-p {
-  text-align: left;
-  color: rgb(255, 255, 255);
-  padding-left: 2%;
+
+main {
+  background-color: rgb(122, 3, 194);
+  width: 700px;
+  margin: 32px auto;
+  padding: 32px;
+  border-radius: 10px;
+  color: rgb(244, 234, 255);
 }
 
 ul {
-  list-style: none;
-  text-align: left;
-  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+li {
+  margin: 14px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
 }
 
 a {
-  color: rgb(102, 3, 194);
+  color: rgb(36, 3, 102);
   text-decoration: none;
-  background-color: rgb(250, 208, 146);
-  border-radius: 6px;
-  border: 3px;
+  background-color: rgb(255, 237, 177);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+a:hover, 
+a:active {
+  background-color: rgb(250, 201, 39);
 }
 
 footer{
+  text-align: center;
   color: rgb(41, 41, 41);
 }
 
-.highlight-goal{
-  color: rgb(235, 172, 78);
+footer p {
+  color: rgb(131, 113, 149);
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: rgb(250, 201, 39);
+  color: rgb(55, 51, 4);
+}
+
+footer a:hover, 
+footer a:active {
+  background-color: rgb(255, 186, );
+}
+
+.highlight-goal {
+  color: rgb(255,237,177);
+  border-left: 5px solid  rgb(247 209 85);
 }
