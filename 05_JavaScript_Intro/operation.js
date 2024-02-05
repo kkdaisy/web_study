@@ -25,5 +25,8 @@ console.log('Jake' + ' ' + 'Daisy');
 console.log('Jake' - 'ak'); // 뺄셈은 할 수 없음. NaN 숫자 연산을 할 수 없는데 숫자 형태의 연산을 요구할 경우
 
 let userName = 'Max';
-console.log(userName.length); // 문자열에 사용할 수 잇는 요소들을 자바스크립트에 내장된 형태로 접근
+console.log(userName.length); // 문자열에 사용할 수 잇는 내장된 메서드
 console.log(userName.toUpperCase());
+
+let hobbies = ["Sports", "Cooking"];
+console.log(hobbies.length);
