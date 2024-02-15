@@ -1,57 +1,26 @@
-// window : 브라우저 윈도우랑 관련된 모든 유틸리티와 함수에 대한 정보를 가지고 있음
-// window 객체는 브라우저 탭에 존재하는 자바스크립트 전역 최상위 객체이다. 따라서 window로 어디서든 접근이 가능하다.
+// 이벤트 리스너
+let paragraphElement = document.querySelector('p') ;
 
-console.dir(document);
+function changeParagraphText() {
+  paragraphElement.textContent = 'Clicked!!';
+}
 
-// window 객체는 전역으로 선언되어 있기 때문에 window객체 안에 있는 요소는 "window."와 같이 window객체를 참조하지 않고도 property 이름으로 바로 접근이 가능하다
-// alert();
-// window.alert();
-
-
-// document
-// window 객체 안에는 document 객체가 존재하고, document에는 잠재적으로 보여질 수 있는 dom에 대한 정보가 저장되어 있다. 
-
-// document.body.children[1].children[0].href = 'https://google.com';
-
-// DOM (Document Object Model)
-// html 코드를 분석해 데이터와 브라우저의 내부를 표현하는 것
+// 해당 단락 요소의 click을 listen , click이 발생했을 때 실행할 코드
+// 만약 함수에 ()를 포함하면 클릭하고 clicked로 바뀌는게 아니라, 바로 clicked로 바뀜
+paragraphElement.addEventListener('click', changeParagraphText);
 
 
-// document.getElementById('some-id'): ID로 HTML 요소 선택(ID는 고유해야 하므로 하나의 요소만 선택)
-let anchorElement = document.getElementById('external-link');
-anchorElement.href = 'https://google.com';
+//input type=text 리스너
+let inputElement = document.querySelector('input');
 
-// document.querySelector('<some-css-selector>');
-// 제공된 css 선택자에 의해 충족/선택 된 첫번째 일치하는 요소 선택
-// css 선택자는 모든 종류의 유효한 css 선택자 일 수 있습니다.
-// '#external-id', 'p a'
-anchorElement = document.querySelector('a');
-anchorElement.href = 'https://naver.com';
+function retrieveUserInput(event) {
+  // 입력값을 그대로 누적
+  // let enteredText = inputElement.value;
+  let enteredText = event.target.value;
+  // 입력값을 한개씩
+  // let enteredText = event.data;
+  console.log(enteredText);
+  // console.log(event);
+}
 
-// document.querySelectorAll('<some-css-selector>'): 제공된 CSS 선택자에 의해 충족/선택된 일치하는 모든 HTML 요소를 선택합니다.
-
-
-//ADD AN ELEMENT
-// 1. Create the new element
-
-let newAnchor = document.createElement('a');
-newAnchor.href = 'https://google.com';
-newAnchor.textContent = 'This leads to Google!'
-
-// 2. Get access the parent element that should hold the new element
-
-let firstParagraph = document.querySelector('p');
-
-// 3. Insert the new element into the parent element content
-
-firstParagraph.append(newAnchor);
-
-// REMOVE ELEMENT
-// 1. Select the element that should be removed
-
-let firstH1Element = document.querySelector('h1');
-
-// 2. Remove it!
-
-firstH1Element.remove();
-firstH1Element.parentElement.removeChild(firstH1Element); // for older browser
+inputElement.addEventListener('input', retrieveUserInput);
